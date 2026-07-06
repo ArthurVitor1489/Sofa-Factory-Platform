@@ -580,6 +580,39 @@ const MOCK_PROJECTS: Projeto[] = [
     ativo: true,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString()
+  },
+  {
+    id: 'proj-2',
+    titulo: 'Cobertura Leblon',
+    cidade: 'Rio de Janeiro',
+    estado: 'RJ',
+    descricao: 'Mobiliário sob medida para cobertura integrada. Desenvolvemos o sofá modular Turim em formato de ilha para a sala de TV e as cadeiras Sofia Bouclé para a área gourmet.',
+    capa_url: '/images/sofa_turim.png',
+    ativo: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  },
+  {
+    id: 'proj-3',
+    titulo: 'Casa de Campo Quinta da Baroneza',
+    cidade: 'Bragança Paulista',
+    estado: 'SP',
+    descricao: 'Projeto aconchego com foco em texturas naturais. Mobiliamos a sala principal com a poltrona Costela e o sofá Chesterfield Legacy em couro natural legítimo.',
+    capa_url: '/images/sofa_legacy.png',
+    ativo: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  },
+  {
+    id: 'proj-4',
+    titulo: 'Apartamento Integrado Jardins',
+    cidade: 'São Paulo',
+    estado: 'SP',
+    descricao: 'Ambiente moderno e minimalista. Fabricação sob medida da Mesa de Jantar Fenix em nogueira e as cadeiras Munique com design escandinavo.',
+    capa_url: '/images/mesa_fenix.png',
+    ativo: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
   }
 ];
 
