@@ -394,6 +394,132 @@ const MOCK_PRODUCTS: Produto[] = [
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-sofa-modular-seul',
+    categoria_id: 'cat-sofas',
+    nome: 'Sofá Modular Seul',
+    slug: 'sofa-modular-seul',
+    descricao: 'Sofá modular retilíneo minimalista com assento baixo e design de inspiração oriental. Estofamento em linho rústico cinza-mescla e almofadas de encosto soltas.',
+    dimensoes: { largura: '3.00m', altura: '0.72m', profundidade: '1.00m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-19', produto_id: 'prod-sofa-modular-seul', url: '/images/sofa_turim.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[4], MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-sofa-retratil-istambul-luxo',
+    categoria_id: 'cat-sofas',
+    nome: 'Sofá Retrátil Istambul Luxo',
+    slug: 'sofa-retratil-istambul-luxo',
+    descricao: 'A evolução do conforto. Sistema de reclinamento e abertura automatizados via controle remoto ou aplicativo. Pillow top duplo em espuma viscoelástica.',
+    dimensoes: { largura: '2.80m', altura: '1.05m', profundidade: '1.25m (fechado) / 1.90m (aberto)' },
+    garantia: '5 anos de garantia na estrutura e motorização',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-20', produto_id: 'prod-sofa-retratil-istambul-luxo', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[0], MOCK_FABRICS[1], MOCK_FABRICS[2]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1], MOCK_MATERIALS[2]]
+  },
+  {
+    id: 'prod-poltrona-decorativa-amora',
+    categoria_id: 'cat-poltronas',
+    nome: 'Poltrona Decorativa Amora',
+    slug: 'poltrona-decorativa-amora',
+    descricao: 'Poltrona compacta em formato de gomos orgânicos. Revestimento em bouclé avelã com base em madeira maciça torneada preta.',
+    dimensoes: { largura: '0.78m', altura: '0.76m', profundidade: '0.76m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-21', produto_id: 'prod-poltrona-decorativa-amora', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[1], MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-poltrona-balanco-ninho',
+    categoria_id: 'cat-poltronas',
+    nome: 'Poltrona de Balanço Ninho',
+    slug: 'poltrona-balanco-ninho',
+    descricao: 'Poltrona de balanço suspensa ou com base de chão metálica. Tecida artesanalmente com corda náutica e almofada anatômica impermeável em linho cru.',
+    dimensoes: { largura: '0.90m', altura: '1.20m', profundidade: '0.85m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-22', produto_id: 'prod-poltrona-balanco-ninho', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-mesa-jantar-redonda-luna',
+    categoria_id: 'cat-mesas',
+    nome: 'Mesa de Jantar Redonda Luna',
+    slug: 'mesa-jantar-redonda-luna',
+    descricao: 'Mesa de jantar circular de design elegante. Base cônica ripada em carvalho americano e tampo com prato giratório embutido em madeira ou mármore.',
+    dimensoes: { largura: '1.50m (diâmetro)', altura: '0.76m', profundidade: '1.50m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-23', produto_id: 'prod-mesa-jantar-redonda-luna', url: '/images/mesa_fenix.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-mesa-centro-duo',
+    categoria_id: 'cat-mesas',
+    nome: 'Mesa de Centro Orgânica Duo',
+    slug: 'mesa-centro-organica-duo',
+    descricao: 'Mesa de centro dupla com tampos em formato ameboide e lâminas selecionadas de freixo natural. Pernas em formato de agulha com ponteiras de latão dourado.',
+    dimensoes: { largura: '1.10m e 0.80m', altura: '0.38m e 0.32m', profundidade: '0.70m e 0.55m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-24', produto_id: 'prod-mesa-centro-duo', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-cadeira-cecilia-estofada',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Cecília Estofada',
+    slug: 'cadeira-cecilia-estofada',
+    descricao: 'Cadeira com encosto arredondado abraçador. Estrutura interna metálica revestida em espuma injetada e estofada em tecido veludo chocolate.',
+    dimensoes: { largura: '0.54m', altura: '0.82m', profundidade: '0.55m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-25', produto_id: 'prod-cadeira-cecilia-estofada', url: '/images/cadeira_olivia.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[2], MOCK_FABRICS[1]],
+    materiais: [MOCK_MATERIALS[1]]
   }
 ];
 
