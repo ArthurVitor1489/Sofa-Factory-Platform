@@ -68,6 +68,16 @@ const MOCK_CATEGORIES: Categoria[] = [
     ativo: true,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+  },
+  {
+    id: 'cat-cadeiras',
+    nome: 'Cadeiras',
+    slug: 'cadeiras',
+    descricao: 'Cadeiras estofadas e em madeira maciça com ergonomia e durabilidade.',
+    imagem_url: '/images/cadeira_sofia.png',
+    ativo: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
   }
 ];
 
@@ -158,6 +168,42 @@ const MOCK_PRODUCTS: Produto[] = [
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[3]]
+  },
+  {
+    id: 'prod-cadeira-sofia-boucle',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Sofia Bouclé',
+    slug: 'cadeira-sofia-boucle',
+    descricao: 'Cadeira de jantar estofada com design ergonômico moderno. O tecido bouclé premium oferece textura aconchegante e elegância atemporal para sua mesa de jantar.',
+    dimensoes: { largura: '0.52m', altura: '0.85m', profundidade: '0.56m' },
+    garantia: '2 anos de garantia contra defeitos de fabricação',
+    ativo: true,
+    destaque: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-5', produto_id: 'prod-cadeira-sofia-boucle', url: '/images/cadeira_sofia.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[1], MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-cadeira-eloa-madeira',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Eloá Madeira Maciça',
+    slug: 'cadeira-eloa-madeira-macica',
+    descricao: 'Fabricada em madeira maciça de eucalipto tratado e seco em estufa. Suas curvas orgânicas inspiradas no design escandinavo oferecem leveza e resistência estrutural diferenciada.',
+    dimensoes: { largura: '0.48m', altura: '0.82m', profundidade: '0.50m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-6', produto_id: 'prod-cadeira-eloa-madeira', url: '/images/cadeira_eloa.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
   }
 ];
 
