@@ -543,6 +543,26 @@ const MOCK_BANNERS: Banner[] = [
     ordem: 2,
     ativo: true,
     created_at: new Date().toISOString()
+  },
+  {
+    id: 'ban-3',
+    titulo: 'Poltronas Decorativas de Alta Gama',
+    subtitulo: 'Design, ergonomia e sofisticação para compor e valorizar qualquer ambiente da sua casa.',
+    imagem_url: '/images/poltrona_genova.png',
+    link_destino: '/catalogo?categoria=poltronas',
+    ordem: 3,
+    ativo: true,
+    created_at: new Date().toISOString()
+  },
+  {
+    id: 'ban-4',
+    titulo: 'Mesas & Cadeiras de Jantar',
+    subtitulo: 'A união perfeita de madeira maciça e tapeçaria fina para reunir sua família com requinte.',
+    imagem_url: '/images/mesa_fenix.png',
+    link_destino: '/catalogo?categoria=cadeiras',
+    ordem: 4,
+    ativo: true,
+    created_at: new Date().toISOString()
   }
 ];
 
