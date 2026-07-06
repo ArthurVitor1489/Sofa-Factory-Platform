@@ -49,16 +49,7 @@ const MOCK_CATEGORIES: Categoria[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
-  {
-    id: 'cat-paineis',
-    nome: 'Painéis',
-    slug: 'paineis',
-    descricao: 'Painéis ripados sob medida com acabamento impecável e LED.',
-    imagem_url: '/images/hero_banner.png',
-    ativo: true,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-  },
+
   {
     id: 'cat-planejados',
     nome: 'Planejados',
@@ -151,24 +142,7 @@ const MOCK_PRODUCTS: Produto[] = [
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
   },
-  {
-    id: 'prod-painel-ripado-led',
-    categoria_id: 'cat-paineis',
-    nome: 'Painel Ripado Home Theater com LED',
-    slug: 'painel-ripado-home-theater-led',
-    descricao: 'Painel ripado de alta definição em MDF Ultra, com sistema de iluminação em fita de LED embutida em tom quente. Possui passagem oculta de fiação e prateleiras suspensas chanfradas.',
-    dimensoes: { largura: '3.00m', altura: '2.60m', profundidade: '0.12m' },
-    garantia: '5 anos de garantia para defeitos de fabricação e montagem',
-    ativo: true,
-    destaque: false,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    imagens: [
-      { id: 'img-4', produto_id: 'prod-painel-ripado-led', url: '/images/hero_banner.png', ordem: 0, created_at: new Date().toISOString() }
-    ],
-    tecidos: [],
-    materiais: [MOCK_MATERIALS[3]]
-  },
+
   {
     id: 'prod-cadeira-sofia-boucle',
     categoria_id: 'cat-cadeiras',
