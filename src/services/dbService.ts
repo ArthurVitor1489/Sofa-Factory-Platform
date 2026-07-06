@@ -178,6 +178,222 @@ const MOCK_PRODUCTS: Produto[] = [
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-sofa-modular-turim',
+    categoria_id: 'cat-sofas',
+    nome: 'Sofá Modular Turim Bouclé',
+    slug: 'sofa-modular-turim-boucle',
+    descricao: 'Sofá modular de canto com curvas orgânicas contemporâneas. Revestido em bouclé premium off-white, proporciona modularidade total para se adequar ao desenho da sua sala.',
+    dimensoes: { largura: '3.40m x 2.20m', altura: '0.82m', profundidade: '1.05m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-7', produto_id: 'prod-sofa-modular-turim', url: '/images/sofa_turim.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[1], MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-sofa-couro-legacy',
+    categoria_id: 'cat-sofas',
+    nome: 'Sofá de Couro Legacy',
+    slug: 'sofa-couro-legacy',
+    descricao: 'Estofado estilo Chesterfield revestido em couro natural legítimo. Acabamento artesanal capitonê com costuras reforçadas e pés em madeira maciça com detalhes em bronze.',
+    dimensoes: { largura: '2.30m', altura: '0.78m', profundidade: '0.95m' },
+    garantia: '5 anos de garantia estrutural e do couro',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-8', produto_id: 'prod-sofa-couro-legacy', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[3]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-sofa-retratil-istambul',
+    categoria_id: 'cat-sofas',
+    nome: 'Sofá Retrátil Istambul',
+    slug: 'sofa-retratil-istambul',
+    descricao: 'Sofá retrátil e reclinável com acionamento manual suave. Pillow top de espuma D33 soft com molas ensacadas no assento e encosto de fibra de silicone siliconada.',
+    dimensoes: { largura: '2.60m', altura: '1.02m', profundidade: '1.20m (fechado) / 1.80m (aberto)' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-9', produto_id: 'prod-sofa-retratil-istambul', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[4], MOCK_FABRICS[2]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1], MOCK_MATERIALS[2]]
+  },
+  {
+    id: 'prod-poltrona-giratoria-genova',
+    categoria_id: 'cat-poltronas',
+    nome: 'Poltrona Giratória Gênova',
+    slug: 'poltrona-giratoria-genova',
+    descricao: 'Poltrona com base giratória 360 graus em aço carbono. Revestida em veludo verde floresta premium com encosto ergonômico anatômico e almofada decorativa de apoio lombar.',
+    dimensoes: { largura: '0.82m', altura: '0.88m', profundidade: '0.80m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-10', produto_id: 'prod-poltrona-giratoria-genova', url: '/images/poltrona_genova.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[2], MOCK_FABRICS[0]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-poltrona-costela-adao',
+    categoria_id: 'cat-poltronas',
+    nome: 'Poltrona Costela de Adão Avelã',
+    slug: 'poltrona-costela-adao-avela',
+    descricao: 'Design clássico de Martin Eisler com estrutura de ripas em madeira curvada natural. Almofadas capitonê em tecido linho avelã preenchidas com fibra de poliéster siliconada super macia.',
+    dimensoes: { largura: '0.74m', altura: '0.82m', profundidade: '0.90m' },
+    garantia: '2 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-11', produto_id: 'prod-poltrona-costela-adao', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[0], MOCK_FABRICS[2]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-poltrona-minimalista-viena',
+    categoria_id: 'cat-poltronas',
+    nome: 'Poltrona Minimalista Viena',
+    slug: 'poltrona-minimalista-viena',
+    descricao: 'Poltrona com estrutura aparente em tubo de aço carbono preto microtexturizado. Assento e encosto ergonômicos em couro legítimo suspenso com percintas de alta resistência.',
+    dimensoes: { largura: '0.70m', altura: '0.75m', profundidade: '0.78m' },
+    garantia: '2 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-12', produto_id: 'prod-poltrona-minimalista-viena', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[3]],
+    materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-mesa-jantar-fenix',
+    categoria_id: 'cat-mesas',
+    nome: 'Mesa de Jantar Retangular Fenix',
+    slug: 'mesa-jantar-retangular-fenix',
+    descricao: 'Mesa de jantar de alto padrão com tampo em MDF laminado de nogueira americana e bordas chanfradas. Base geométrica escultural em madeira maciça.',
+    dimensoes: { largura: '2.40m', altura: '0.76m', profundidade: '1.20m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-13', produto_id: 'prod-mesa-jantar-fenix', url: '/images/mesa_fenix.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-mesa-centro-seixos',
+    categoria_id: 'cat-mesas',
+    nome: 'Mesa de Centro Orgânica Seixos',
+    slug: 'mesa-centro-organica-seixos',
+    descricao: 'Conjunto de duas mesas de centro orgânicas aninhadas com alturas diferentes. Tampo texturizado em microcimento off-white e pés cilíndricos robustos de carvalho.',
+    dimensoes: { largura: '1.20m e 0.90m', altura: '0.35m e 0.28m', profundidade: '0.80m e 0.60m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-14', produto_id: 'prod-mesa-centro-seixos', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
+  },
+  {
+    id: 'prod-mesa-apoio-latao',
+    categoria_id: 'cat-mesas',
+    nome: 'Mesa de Apoio Lateral Latão',
+    slug: 'mesa-apoio-lateral-latao',
+    descricao: 'Mesa de apoio lateral decorativa cilíndrica fabricada em chapa de latão escovado com detalhes martelados artesanalmente. Peça de destaque com design escultural.',
+    dimensoes: { largura: '0.40m (diâmetro)', altura: '0.55m', profundidade: '0.40m' },
+    garantia: '1 ano de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-15', produto_id: 'prod-mesa-apoio-latao', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: []
+  },
+  {
+    id: 'prod-cadeira-olivia-madeira',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Olívia Madeira Estofada',
+    slug: 'cadeira-olivia-madeira-estofada',
+    descricao: 'Cadeira de jantar ergonômica clássica em madeira maciça com assento e encosto anatômicos estofados em linho bege de toque suave.',
+    dimensoes: { largura: '0.50m', altura: '0.88m', profundidade: '0.54m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-16', produto_id: 'prod-cadeira-olivia-madeira', url: '/images/cadeira_olivia.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[0], MOCK_FABRICS[1]],
+    materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-cadeira-melissa-couro',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Melissa Couro Sintético',
+    slug: 'cadeira-melissa-couro-sintetico',
+    descricao: 'Cadeira de jantar contemporânea com concha estofada revestida em couro ecológico terracota. Pés delgados de aço carbono preto.',
+    dimensoes: { largura: '0.49m', altura: '0.84m', profundidade: '0.52m' },
+    garantia: '2 anos de garantia',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-17', produto_id: 'prod-cadeira-melissa-couro', url: '/images/cadeira_sofia.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [MOCK_FABRICS[3]],
+    materiais: [MOCK_MATERIALS[1]]
+  },
+  {
+    id: 'prod-cadeira-munique-minimalista',
+    categoria_id: 'cat-cadeiras',
+    nome: 'Cadeira Munique Minimalista',
+    slug: 'cadeira-munique-minimalista',
+    descricao: 'Cadeira de jantar com linhas retas e marcantes. Fabricada inteiramente em madeira maciça de freixo natural com encosto ligeiramente curvado para maior conforto.',
+    dimensoes: { largura: '0.46m', altura: '0.81m', profundidade: '0.48m' },
+    garantia: '3 anos de garantia estrutural',
+    ativo: true,
+    destaque: false,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    imagens: [
+      { id: 'img-18', produto_id: 'prod-cadeira-munique-minimalista', url: '/images/cadeira_eloa.png', ordem: 0, created_at: new Date().toISOString() }
+    ],
+    tecidos: [],
+    materiais: [MOCK_MATERIALS[0]]
   }
 ];
 

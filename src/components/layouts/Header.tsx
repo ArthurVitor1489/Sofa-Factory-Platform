@@ -44,6 +44,8 @@ export default function Header() {
     setIsOpen(false);
   }, [pathname]);
 
+  const isDarkThemeHeader = pathname === '/' && !scrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -60,10 +62,14 @@ export default function Header() {
               <Sofa className="w-5 h-5" />
             </div>
             <div>
-              <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-foreground block leading-none">
+              <span className={`font-serif text-lg sm:text-xl font-bold tracking-tight block leading-none transition-colors duration-200 ${
+                isDarkThemeHeader ? 'text-white' : 'text-foreground'
+              }`}>
                 ARTE & CONFORTO
               </span>
-              <span className="text-[10px] uppercase tracking-widest text-muted-foreground block font-sans">
+              <span className={`text-[10px] uppercase tracking-widest block font-sans transition-colors duration-200 ${
+                isDarkThemeHeader ? 'text-white/60' : 'text-muted-foreground'
+              }`}>
                 Fábrica Premium
               </span>
             </div>
@@ -77,15 +83,17 @@ export default function Header() {
                 href={link.href}
                 className={`text-sm font-medium tracking-wide transition-colors duration-200 relative py-1 ${
                   isLinkActive(link.href)
-                    ? 'text-primary'
-                    : 'text-foreground/80 hover:text-primary'
+                    ? (isDarkThemeHeader ? 'text-[#C5A880]' : 'text-primary')
+                    : (isDarkThemeHeader ? 'text-white/80 hover:text-white' : 'text-foreground/80 hover:text-primary')
                 }`}
               >
                 {link.name}
                 {isLinkActive(link.href) && (
                   <motion.span
                     layoutId="activeNavIndicator"
-                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary rounded-full"
+                    className={`absolute bottom-0 left-0 right-0 h-[2px] rounded-full ${
+                      isDarkThemeHeader ? 'bg-[#C5A880]' : 'bg-primary'
+                    }`}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -108,7 +116,9 @@ export default function Header() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-foreground hover:bg-muted focus:outline-none transition-colors"
+              className={`inline-flex items-center justify-center p-2 rounded-lg focus:outline-none transition-colors duration-200 ${
+                isDarkThemeHeader ? 'text-white hover:bg-white/10' : 'text-foreground hover:bg-muted'
+              }`}
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
