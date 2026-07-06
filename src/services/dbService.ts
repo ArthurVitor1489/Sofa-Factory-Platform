@@ -210,7 +210,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-8', produto_id: 'prod-sofa-couro-legacy', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-8', produto_id: 'prod-sofa-couro-legacy', url: '/images/sofa_legacy.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[3]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
@@ -228,7 +228,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-9', produto_id: 'prod-sofa-retratil-istambul', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-9', produto_id: 'prod-sofa-retratil-istambul', url: '/images/sofa_istambul.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[4], MOCK_FABRICS[2]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1], MOCK_MATERIALS[2]]
@@ -264,7 +264,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-11', produto_id: 'prod-poltrona-costela-adao', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-11', produto_id: 'prod-poltrona-costela-adao', url: '/images/poltrona_costela.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[0], MOCK_FABRICS[2]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
@@ -282,7 +282,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-12', produto_id: 'prod-poltrona-minimalista-viena', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-12', produto_id: 'prod-poltrona-minimalista-viena', url: '/images/poltrona_viena.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[3]],
     materiais: [MOCK_MATERIALS[0]]
@@ -318,7 +318,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-14', produto_id: 'prod-mesa-centro-seixos', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-14', produto_id: 'prod-mesa-centro-seixos', url: '/images/mesa_seixos.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
@@ -336,7 +336,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-15', produto_id: 'prod-mesa-apoio-latao', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-15', produto_id: 'prod-mesa-apoio-latao', url: '/images/mesa_latao.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [],
     materiais: []
@@ -372,7 +372,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-17', produto_id: 'prod-cadeira-melissa-couro', url: '/images/cadeira_sofia.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-17', produto_id: 'prod-cadeira-melissa-couro', url: '/images/cadeira_melissa.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[3]],
     materiais: [MOCK_MATERIALS[1]]
@@ -390,7 +390,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-18', produto_id: 'prod-cadeira-munique-minimalista', url: '/images/cadeira_eloa.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-18', produto_id: 'prod-cadeira-munique-minimalista', url: '/images/cadeira_munique.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
@@ -408,7 +408,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-19', produto_id: 'prod-sofa-modular-seul', url: '/images/sofa_turim.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-19', produto_id: 'prod-sofa-modular-seul', url: '/images/sofa_seul.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[4], MOCK_FABRICS[0]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
@@ -426,7 +426,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-20', produto_id: 'prod-sofa-retratil-istambul-luxo', url: '/images/sofa_retratil.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-20', produto_id: 'prod-sofa-retratil-istambul-luxo', url: '/images/sofa_istambul_luxo.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[0], MOCK_FABRICS[1], MOCK_FABRICS[2]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1], MOCK_MATERIALS[2]]
@@ -444,7 +444,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-21', produto_id: 'prod-poltrona-decorativa-amora', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-21', produto_id: 'prod-poltrona-decorativa-amora', url: '/images/poltrona_amora.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[1], MOCK_FABRICS[0]],
     materiais: [MOCK_MATERIALS[0], MOCK_MATERIALS[1]]
@@ -462,7 +462,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-22', produto_id: 'prod-poltrona-balanco-ninho', url: '/images/poltrona_florenza.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-22', produto_id: 'prod-poltrona-balanco-ninho', url: '/images/poltrona_ninho.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[0]],
     materiais: [MOCK_MATERIALS[1]]
@@ -480,7 +480,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-23', produto_id: 'prod-mesa-jantar-redonda-luna', url: '/images/mesa_fenix.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-23', produto_id: 'prod-mesa-jantar-redonda-luna', url: '/images/mesa_luna.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
@@ -498,7 +498,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-24', produto_id: 'prod-mesa-centro-duo', url: '/images/mesa_jantar.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-24', produto_id: 'prod-mesa-centro-duo', url: '/images/mesa_duo.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [],
     materiais: [MOCK_MATERIALS[0]]
@@ -516,7 +516,7 @@ const MOCK_PRODUCTS: Produto[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     imagens: [
-      { id: 'img-25', produto_id: 'prod-cadeira-cecilia-estofada', url: '/images/cadeira_olivia.png', ordem: 0, created_at: new Date().toISOString() }
+      { id: 'img-25', produto_id: 'prod-cadeira-cecilia-estofada', url: '/images/cadeira_cecilia.png', ordem: 0, created_at: new Date().toISOString() }
     ],
     tecidos: [MOCK_FABRICS[2], MOCK_FABRICS[1]],
     materiais: [MOCK_MATERIALS[1]]
